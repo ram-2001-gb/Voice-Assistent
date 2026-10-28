@@ -54,7 +54,7 @@ class AndroidSpeechManager @Inject constructor(
                 AssistantLanguage.ENGLISH -> putExtra(RecognizerIntent.EXTRA_LANGUAGE, "en-US")
                 AssistantLanguage.BILINGUAL -> {
                     putExtra(RecognizerIntent.EXTRA_LANGUAGE, "ta-IN")
-                    putExtra(RecognizerIntent.EXTRA_ADDITIONAL_LANGUAGES, arrayOf("en-US", "en-IN"))
+                    putExtra("android.speech.extra.EXTRA_ADDITIONAL_LANGUAGES", arrayOf("en-US", "en-IN"))
                 }
             }
 
